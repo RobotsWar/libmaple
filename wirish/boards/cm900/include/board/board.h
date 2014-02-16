@@ -89,13 +89,11 @@
 #define BOARD_NR_USED_PINS       1
 
 /* Debug port pins */
-/*
-#define BOARD_JTMS_SWDIO_PIN    11//39
-#define BOARD_JTCK_SWCLK_PIN    12//40
-#define BOARD_JTDI_PIN          13//41
-#define BOARD_JTDO_PIN          17//42
-#define BOARD_NJTRST_PIN        18//43
-*/
+#define BOARD_JTMS_SWDIO_PIN    11
+#define BOARD_JTCK_SWCLK_PIN    12
+#define BOARD_JTDI_PIN          13
+#define BOARD_JTDO_PIN          17
+#define BOARD_NJTRST_PIN        18
 
 #define BOARD_USB_DISC_DEV      GPIOC
 #define BOARD_USB_DISC_BIT      13

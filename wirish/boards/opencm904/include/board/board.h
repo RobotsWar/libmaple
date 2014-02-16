@@ -92,8 +92,14 @@
 
 void boardInit(void);
 
-#define BOARD_DYNAMIXEL_DIR     26
-#define BOARD_DYNAMIXEL_TX      27
-#define BOARD_DYNAMIXEL_RX      28
+#define BOARD_DYNAMIXEL_DIR     28
+#define BOARD_DYNAMIXEL_TX      29
+#define BOARD_DYNAMIXEL_RX      30
+
+#define BOARD_JTMS_SWDIO_PIN      26
+#define BOARD_JTCK_SWCLK_PIN      27
+#define BOARD_JTDI_PIN            15
+#define BOARD_JTDO_PIN            16
+#define BOARD_NJTRST_PIN          17
 
 #endif /* CM904_H_ */

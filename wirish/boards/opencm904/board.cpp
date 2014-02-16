@@ -54,7 +54,6 @@ void boardInit(void) {
 }
 
 extern const stm32_pin_info PIN_MAP[BOARD_NR_GPIO_PINS] = {
-
    /* Top header */
 	{GPIOA,   NULL, ADC1,  4, 0,    4}, /* D0/PA4 */
 	{GPIOA,   NULL, ADC1,  5, 0,    5}, /* D1/PA5  */
@@ -90,11 +89,11 @@ extern const stm32_pin_info PIN_MAP[BOARD_NR_GPIO_PINS] = {
  * Hidden pin map
  * the below pins are used carefully, need to check schematic of OpenCM9.04
  * */
-	{GPIOA,   NULL, NULL, 13, 0, ADCx}, /* D29/PA13 JTAG SWDIO*/
-	{GPIOA,   NULL, NULL, 14, 0, ADCx}, /* D30/PA14 JTAG SWDCLK*/
-	{GPIOB,   NULL, NULL,  5, 0, ADCx}, /* D26/PB5 DXL DIR*/
-	{GPIOB, TIMER4, NULL,  6, 1, ADCx}, /* D27/PB6 DXL TXD*/
-	{GPIOB, TIMER4, NULL,  7, 2, ADCx} /* D28/PB7 DXL RXD -> dont work as output and input*/
+	{GPIOA,   NULL, NULL, 13, 0, ADCx}, /* D26/PA13 JTAG SWDIO*/
+	{GPIOA,   NULL, NULL, 14, 0, ADCx}, /* D27/PA14 JTAG SWDCLK*/
+	{GPIOB,   NULL, NULL,  5, 0, ADCx}, /* D28/PB5 DXL DIR*/
+	{GPIOB, TIMER4, NULL,  6, 1, ADCx}, /* D29/PB6 DXL TXD*/
+	{GPIOB, TIMER4, NULL,  7, 2, ADCx} /* D30/PB7 DXL RXD -> dont work as output and input*/
 
 };
 
