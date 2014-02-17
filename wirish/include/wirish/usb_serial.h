@@ -33,11 +33,13 @@
 
 #include <wirish/Print.h>
 #include <wirish/boards.h>
+#include <wirish/Read.h>
+#include <wirish/Serial.h>
 
 /**
  * @brief Virtual serial terminal.
  */
-class USBSerial : public Print {
+class USBSerial : public Serial {
 public:
     USBSerial(void);
 

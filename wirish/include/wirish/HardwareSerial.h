@@ -37,6 +37,8 @@
 
 #include <wirish/Print.h>
 #include <wirish/boards.h>
+#include <wirish/Read.h>
+#include <wirish/Serial.h>
 
 /*
  * IMPORTANT:
@@ -50,7 +52,7 @@
 
 struct usart_dev;
 
-class HardwareSerial : public Print {
+class HardwareSerial : public Serial {
 public:
     HardwareSerial(struct usart_dev *usart_device,
                    uint8 tx_pin,
